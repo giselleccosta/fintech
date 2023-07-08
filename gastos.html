@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Controle de Gastos</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4" align="center"><strong>Gastos</strong></h1>
+    <div class="row mt-4">
+      <div class="col">
+        <label for="periodo">Filtrar por período:</label>
+        <select class="form-select" id="periodo">
+          <option value="hoje">Hoje</option>
+          <option value="ontem">Ontem</option>
+          <option value="semana">Essa semana</option>
+          <option value="mes">Esse mês</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="origem">Filtrar por origem:</label>
+        <select class="form-select" id="origem">
+          <option value="supermercados">Supermercados</option>
+          <option value="combustiveis">Combustíveis</option>
+          <option value="impostos">Impostos</option>
+          <option value="farmacia">Farmácia</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="valor">Filtrar por valor:</label>
+        <select class="form-select" id="valor">
+          <option value="ate10">Até R$ 10</option>
+          <option value="10a100">De R$ 10 até R$ 100</option>
+          <option value="100a200">De R$ 100 até R$ 200</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Valor (R$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button type="button" class="btn btn-primary btn-sm">Ver</button></td>
+              <td>Supermercado</td>
+              <td>50.00</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary btn-sm">Ver</button></td>
+              <td>Combustível</td>
+              <td>80.00</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary btn-sm">Ver</button></td>
+              <td>Impostos</td>
+              <td>150.00</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary btn-sm">Ver</button></td>
+              <td>Farmácia</td>
+              <td>20.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
